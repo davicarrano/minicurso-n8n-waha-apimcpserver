@@ -6,6 +6,7 @@ services:
     image: devlikeapro/waha:latest
     platform: linux/amd64
     environment:
+      WHATSAPP_HOOK_URL: http://n8n:5678/webhook/webhook
       WHATSAPP_DEFAULT_ENGINE: GOWS
       WHATSAPP_HOOK_EVENTS: message
     volumes:
@@ -13,6 +14,8 @@ services:
       - waha_media:/app/.media
     ports:
       - "3000:3000"
+    networks:
+      - rede-local 
 
   n8n:
     image: n8nio/n8n:latest
@@ -27,7 +30,19 @@ services:
       - n8n_data:/home/node/.n8n
     ports:
       - "5678:5678"
+    networks:
+      - rede-local 
 
+  api-mcp-faculdade:
+    image: davicarrano/api-mcp-faculdade:v1.0.0
+    ports:
+      - "8080:8080"    
+    networks:
+      - rede-local
+
+networks:
+  rede-local:
+    driver: bridge
   
 
 volumes:
