@@ -1,6 +1,7 @@
 package com.example.demo.discentes;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -27,5 +28,10 @@ public interface DiscenteRepository extends JpaRepository<Discente, Integer> {
 	@Query(value = "select nome, cidade, curso, linha_pesquisa from discentes "
 			+ " where upper(linha_pesquisa) = upper(:linhaPesquisa)", nativeQuery = true)
 	List<DiscenteDTO> findDiscentesPorLinhaPesquisa(String linhaPesquisa);
+
+	@Query(value = "select id, nome, cidade, curso, linha_pesquisa from discentes "
+			+ " where upper(nome) = upper(:nome) and upper(cidade) = upper(:cidade) and upper(curso) = upper(:curso) and upper(linha_pesquisa) = upper(:linhaPesquisa)", nativeQuery = true)
+	Optional<Discente> findByNomeAndCidadeAndCurso(String nome, String cidade, String curso,String linhaPesquisa);
+
 
 }

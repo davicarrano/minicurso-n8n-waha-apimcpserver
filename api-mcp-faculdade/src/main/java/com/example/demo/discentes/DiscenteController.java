@@ -3,6 +3,7 @@ package com.example.demo.discentes;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -50,5 +51,10 @@ public class DiscenteController {
 	public Discente criaDiscentes(@RequestBody DiscenteForm form) {
 		return discentesService.criarDiscentes(form);
 	}
+	
+	@DeleteMapping()
+	public String excluirDiscentes(@RequestBody DiscenteForm form) {
+		return discentesService.excluirDiscentes(form);
+	}	
 	
 }

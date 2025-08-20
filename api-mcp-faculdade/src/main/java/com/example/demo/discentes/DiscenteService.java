@@ -1,6 +1,7 @@
 package com.example.demo.discentes;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,12 +41,23 @@ public class DiscenteService {
 		return discentesRepository.findDiscentesPorLinhaPesquisa(linhaPesquisa);
 	}
 
-	@Tool(name="cirarDiscente", description = "Cria um discente na base de dados")
+	@Tool(name="criarDiscente", description = "Cria um discente na base de dados")
 	public Discente criarDiscentes(DiscenteForm form) {
 		Discente discente = new Discente(form.getNome(),form.getCidade(), form.getCurso(), form.getLinhaPesquisa());
 		discentesRepository.save(discente);
 		return discente;
 	}
 	
+	@Tool(name="excluirDiscente", description = "Exclui um discente na base de dados")
+	public String excluirDiscentes(DiscenteForm form) {
+		Optional<Discente> discenteOptional = discentesRepository.findByNomeAndCidadeAndCurso(form.getNome(),form.getCidade(),form.getCurso(),form.getLinhaPesquisa());
+		if (discenteOptional.isPresent()) {			
+			discentesRepository.delete(discenteOptional.get());			
+			return "Discente "+form.getNome()+ ", da cidade "+form.getCidade()+ ", do curso "+form.getCurso()+" e da linha de pesquisa "+form.getLinhaPesquisa()+ " excluído com sucesso!";		
+		}else {
+			return "Discente não encontrado!";
+		}
+	}
+
 	
 }

@@ -33,7 +33,7 @@ services:
       - rede-local 
 
   api-mcp-faculdade:
-    image: davicarrano/api-mcp-faculdade:v1.0.0
+    image: davicarrano/api-mcp-faculdade:v1.1.2
     ports:
       - "8080:8080"    
     networks:

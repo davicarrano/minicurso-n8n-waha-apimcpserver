@@ -23,14 +23,14 @@ INSERT INTO discentes (nome, cidade, curso, linha_pesquisa) VALUES
 ('Bia', 'SJDR', 'Letras', 'portugues'),
 ('Davi', 'DIVINOPOLIS', 'Letras', 'ingles'),
 
--- Agronomia (30 alunos, todos CAP, 2 linhas)
-('Leo', 'CAP', 'Agronomia', 'animais'),
-('Mia', 'CAP', 'Agronomia', 'solo'),
-('Nina', 'CAP', 'Agronomia', 'animais'),
-('Otto', 'CAP', 'Agronomia', 'solo'),
-('Paula', 'CAP', 'Agronomia', 'animais'),
-('Quin', 'CAP', 'Agronomia', 'solo'),
-('Rafa', 'CAP', 'Agronomia', 'animais'),
-('Sara', 'CAP', 'Agronomia', 'solo'),
-('Téo', 'CAP', 'Agronomia', 'animais'),
-('Uli', 'CAP', 'Agronomia', 'solo');
+-- Agronomia (30 alunos, todos LAFAIETE, 2 linhas)
+('Leo', 'LAFAIETE', 'Agronomia', 'animais'),
+('Mia', 'LAFAIETE', 'Agronomia', 'solo'),
+('Nina', 'LAFAIETE', 'Agronomia', 'animais'),
+('Otto', 'LAFAIETE', 'Agronomia', 'solo'),
+('Paula', 'LAFAIETE', 'Agronomia', 'animais'),
+('Quin', 'LAFAIETE', 'Agronomia', 'solo'),
+('Rafa', 'LAFAIETE', 'Agronomia', 'animais'),
+('Sara', 'LAFAIETE', 'Agronomia', 'solo'),
+('Téo', 'LAFAIETE', 'Agronomia', 'animais'),
+('Uli', 'LAFAIETE', 'Agronomia', 'solo');
