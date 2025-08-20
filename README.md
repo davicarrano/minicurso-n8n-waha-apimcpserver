@@ -72,6 +72,9 @@ Abra o browser e carregue o endereço **http://localhost:3000/dashboard**.
 Abra o browser e carregue o endereço **http://localhost:5678**.
 
 
+### 🖥️ Manual para configurar o waha e o n8n
+
+
 ## 📞 Contato
 
 - 👨‍💻 **Autor:** Davi Carrano
