@@ -6,8 +6,8 @@ O Agente de IA também será integrado a uma API que possui as funcionalidades d
 
 ### 📋 Pré-requisitos configurados na máquina
 - [Java17] (https://dev.to/alexjesustech/como-intalar-o-java-jdk-17-no-ubuntu-2204-19cm)
-- [Docker](https://www.docker.com) 
-- [docker-compose](https://docs.docker.com/compose/install/linux) 
+- [Docker] (https://www.docker.com) 
+- [docker-compose] (https://docs.docker.com/compose/install/linux) 
 
 ---
 
