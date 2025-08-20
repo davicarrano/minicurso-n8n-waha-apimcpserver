@@ -19,7 +19,7 @@ O Agente de IA também será integrado a uma API que possui as funcionalidades d
 ---
 
 ## 🖥️ Como baixar o projeto
-No terminal, executar o comando abaixo:
+No terminal, executar o comando abaixo:Java17
 ```bash
 
 git clone https://github.com/davicarrano/minicurso-n8n-waha-apimcpserver.git
@@ -48,7 +48,7 @@ docker push NOME_DA_IMAGEM
 ### 🖥️ Rodando localmente a stack de aplicações
 
 O docker-compose contempla 3 aplicações: waha (API do whatsapp), n8n (ferramenta de automação) e api-mcp-faculdade (API de exemplo com funcionalidades relacionadas a dados de alunos).
-Com o projeto baixado e do docker-compose configurado, execute o comando abaixo para subir a stack das aplicações:
+Com o projeto baixado e o docker-compose configurado, execute o comando abaixo para subir a stack das aplicações:
 
 ```bash
 docker compose -f docker-compose.yaml up -d
