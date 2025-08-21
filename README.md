@@ -1,6 +1,7 @@
 # 🚀 Minicurso Chatbots com IA: Integre WhatsApp, n8n, DeepSeek e APIs para atendimento autônomo e personalizado
-> Neste projeto, será criado um chatbot no whatsapp que será integrado a um Agente de Inteligência Artificial, por meio da API Waha e do n8n. 
-O Agente de IA também será integrado a uma API que possui as funcionalidades de consulta, criação e remoção de alunos. Os dados desta API foram gerados aleatoriamente e estão em um banco em memória na própria API.
+> Neste projeto, será criado um chatbot que irá integrar o whatsapp a um Agente de Inteligência Artificial, por meio da API Waha (API do whatsapp) e do n8n (ferramenta de automação). 
+O chatbot responderá com base não somente em todo o conhecimento do modelo de inteligência artificial que estiver sendo usado (neste projeto urilizaremos o DeepSeek), mas também com base nas informações disponibilizadas por uma API configurada como MCP Server (API Springboot configurada com o protocolo Model Context Protocol).
+O Agente de IA será capaz de utilizar as funcionalidades disponibilizadas por este MCP Server, como consulta, criação e remoção de alunos de uma faculdade. Os dados desta API foram gerados aleatoriamente e estão em um banco de dados em memória na própria API.
 
 ---
 
