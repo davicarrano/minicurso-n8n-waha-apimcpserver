@@ -54,7 +54,7 @@ O docker-compose contempla 3 aplicações: waha (API do whatsapp), n8n (ferramen
 Com o projeto baixado e o docker-compose configurado, execute o comando abaixo para subir a stack das aplicações:
 
 ```bash
-docker compose -f docker-compose.yaml up -d
+docker compose -f docker-compose.yml up -d
 
 ```
 
