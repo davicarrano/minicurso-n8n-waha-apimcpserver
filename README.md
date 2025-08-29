@@ -76,6 +76,10 @@ Abra o browser e carregue o endereço **http://localhost:5678**.
 ### 🖥️ Manual para configurar o waha e o n8n
 Link: https://github.com/davicarrano/minicurso-n8n-waha-apimcpserver/blob/main/docs/manual-configura%C3%A7%C3%A3o-waha-n8n-deepseek.pdf
 
+### 📋 Documentação das API's do Waha e n8n
+- [Waha](https://waha.devlike.pro/docs/how-to/)
+- [n8n](https://docs.n8n.io/hosting/) 
+
 ## 📞 Contato
 
 - 👨‍💻 **Autor:** Davi Carrano
