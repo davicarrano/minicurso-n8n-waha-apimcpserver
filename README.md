@@ -3,6 +3,9 @@
 > O chatbot responderá às mensagens com base tanto no conhecimento do modelo de IA escolhido (neste minicurso, o DeepSeek) quanto em informações fornecidas por uma API configurada como MCP Server (uma aplicação Spring Boot que segue o protocolo Model Context Protocol).
 > Esse Agente de IA poderá interagir com a API, utilizando funcionalidades como consultar, cadastrar e remover alunos de uma faculdade. Os dados da API são fictícios, armazenados em um banco de dados em memória, criado especialmente para fins didáticos.
 
+<img width="1568" height="847" alt="image" src="https://github.com/user-attachments/assets/5afa9a6e-0008-4c3a-8da9-c202e2b836a1" />
+
+
 ---
 
 ### 📋 Pré-requisitos configurados na máquina
